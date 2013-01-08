@@ -19,7 +19,7 @@ class IndexControllerTest extends PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-    	$bootstrap        = Zend\Mvc\Application::init(include 'config/application.config.php');
+    	$bootstrap        = \Zend\Mvc\Application::init(include 'config/application.config.php');
         $this->controller = new IndexController();
         $this->request    = new Request();
         $this->routeMatch = new RouteMatch(array('controller' => 'index'));
